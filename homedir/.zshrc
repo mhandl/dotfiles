@@ -49,7 +49,4 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # Customize to your needs...
-unsetopt correct
-
-# run fortune on new terminal :)
-fortune
+#unsetopt correct

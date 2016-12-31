@@ -592,12 +592,12 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144;o
 running "Follow the keyboard focus while zoomed in"
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true;ok
 
-running "Disable press-and-hold for keys in favor of key repeat"
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false;ok
+#running "Disable press-and-hold for keys in favor of key repeat"
+#defaults write NSGlobalDomain c -bool false;ok
 
 running "Set a blazingly fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10;ok
+#defaults write NSGlobalDomain KeyRepeat -int 1
+#defaults write NSGlobalDomain InitialKeyRepeat -int 10;ok
 
 running "Set language and text formats (english/US)"
 defaults write NSGlobalDomain AppleLanguages -array "en"
@@ -640,8 +640,8 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 running "Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
 defaults write com.apple.finder QuitMenuItem -bool true;ok
 
-running "Disable window animations and Get Info animations"
-defaults write com.apple.finder DisableAllAnimations -bool true;ok
+#running "Disable window animations and Get Info animations"
+#defaults write com.apple.finder DisableAllAnimations -bool true;ok
 
 running "Set Desktop as the default location for new Finder windows"
 # For other paths, use 'PfLo' and 'file:///full/path/here/'
@@ -737,7 +737,7 @@ running "Show indicator lights for open applications in the Dock"
 defaults write com.apple.dock show-process-indicators -bool true;ok
 
 running "Don’t animate opening applications from the Dock"
-defaults write com.apple.dock launchanim -bool false;ok
+defaults write com.apple.dock launchanim -bool true;ok
 
 running "Speed up Mission Control animations"
 defaults write com.apple.dock expose-animation-duration -float 0.1;ok
@@ -763,8 +763,8 @@ defaults write com.apple.dock mru-spaces -bool false;ok
 #running "Automatically hide and show the Dock"
 #defaults write com.apple.dock autohide -bool true;ok
 
-#running "Make Dock icons of hidden applications translucent"
-#defaults write com.apple.dock showhidden -bool true;ok
+running "Make Dock icons of hidden applications translucent"
+defaults write com.apple.dock showhidden -bool true;ok
 
 running "Make Dock more transparent"
 defaults write com.apple.dock hide-mirror -bool true;ok
@@ -1018,11 +1018,11 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 bot "SizeUp.app"
 ###############################################################################
 
-#running "Start SizeUp at login"
-#defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true;ok
+running "Start SizeUp at login"
+defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true;ok
 
-#running "Don’t show the preferences window on next start"
-#defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false;ok
+running "Don’t show the preferences window on next start"
+defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false;ok
 
 #killall cfprefsd
 
