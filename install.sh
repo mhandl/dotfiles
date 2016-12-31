@@ -227,7 +227,7 @@ popd > /dev/null 2>&1
 bot "installing fonts"
 ./fonts/install.sh
 brew tap caskroom/fonts
-require_cask font-awesome
+require_cask font-fontawesome
 require_cask font-awesome-terminal-fonts
 require_cask font-hack
 require_cask font-inconsolata-dz-for-powerline
@@ -236,6 +236,10 @@ require_cask font-inconsolata-for-powerline
 require_cask font-roboto-mono
 require_cask font-roboto-mono-for-powerline
 require_cask font-source-code-pro
+require_cask font-3270
+require_cask font-anonymice-powerline
+require_cask font-consolas-for-powerline
+require_cask font-menlo-for-powerline
 ok
 
 if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
