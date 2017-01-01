@@ -24,6 +24,10 @@ export MYDEVAPPS=/Applications/Dev
 
 #########################################################################
 # Tool settings
-#########################################################################
-export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
-export NVM_DIR=~/.nvm
+#########################################################################tgoing_keys
+export fontconfig_path=/opt/x11/lib/x11/fontconfig
+export nvm_dir=~/.nvm
+
+
+# Exports for project JANUoutgoing_keys
+export KEYS_PATH=~/workspace/tmcz/janus/outgoing_keys
