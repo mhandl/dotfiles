@@ -26,8 +26,14 @@ export MYDEVAPPS=/Applications/Dev
 # Tool settings
 #########################################################################tgoing_keys
 export fontconfig_path=/opt/x11/lib/x11/fontconfig
-export nvm_dir=~/.nvm
+export NVM_DIR=~/.nvm
 
 
-# Exports for project JANUoutgoing_keys
-export KEYS_PATH=~/workspace/tmcz/janus/outgoing_keys
+# Exports for project JANUS 
+export KEYS_PATH=~/workspace/tmcz/janus/backend/outgoing_keys
+export EETS_HOME=~/workspace/tmcz/janus
+export CASSANDRA_PORT_9042_TCP_ADDR=localhost
+export ETCD_PORT_2379_TCP_ADDR=localhost
+export EETS_DB_HOST_0=localhost
+export ETCD_HOST=localhost
+export TEST_TIMEFACTOR=2.0

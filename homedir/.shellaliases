@@ -96,3 +96,8 @@ alias vtop="vtop --theme wizard"
 
 #Project settings
 alias jan="cd ~/workspace/tmcz/janus"
+alias ssh.c1t="ssh cqeet@c1t.cz.tmo"
+alias ssh.c2t="ssh cqeet@c2t.cz.tmo"
+alias ssh.c3t="ssh cqeet@c3t.cz.tmo"
+alias ssh.j1t="ssh janus@j1t.cz.tmo"
+alias ssh.j2t="ssh janus@j2t.cz.tmo"
