@@ -1,3 +1,6 @@
+
+export TERM="xterm-256color"
+
 # Set vim as default editor (vi is the default otherwise)
 export EDITOR="vim"
 bindkey -v
@@ -28,12 +31,14 @@ export MYDEVAPPS=/Applications/Dev
 export fontconfig_path=/opt/x11/lib/x11/fontconfig
 export NVM_DIR=~/.nvm
 
+export SCALA_HOME=/Users/mhandl/workspace/tools/scala/2.11.8
 
-# Exports for project JANUS 
-export KEYS_PATH=~/workspace/tmcz/janus/backend/outgoing_keys
+# Exports for project JANUS
+export KEYS_PATH=~/workspace/tmcz/janus/backend/src/main/resources/keys/dev
 export EETS_HOME=~/workspace/tmcz/janus
 export CASSANDRA_PORT_9042_TCP_ADDR=localhost
 export ETCD_PORT_2379_TCP_ADDR=localhost
 export EETS_DB_HOST_0=localhost
 export ETCD_HOST=localhost
 export TEST_TIMEFACTOR=2.0
+export EETS_LDAP_ENABLED=true

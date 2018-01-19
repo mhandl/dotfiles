@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.dotfiles/oh-my-zsh
 # if you want to use this, change your non-ascii font to Droid Sans Mono for Awesome
@@ -43,7 +44,7 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize compleat dirpersist docker autojump git gulp history cp)
+plugins=(colorize compleat dirpersist docker oc autojump git gulp history cp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,3 +65,9 @@ load-nvmrc
 
 # Customize to your needs...
 #unsetopt correct
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mhandl/workspace/tools/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mhandl/workspace/tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mhandl/workspace/tools/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mhandl/workspace/tools/google-cloud-sdk/completion.zsh.inc'; fi
